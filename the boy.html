@@ -1,0 +1,54 @@
+<?php
+session_start();
+if(isset($_SESSION['visitcount']))
+{
+	$_SESSION['visitcount']++;
+}
+else
+{
+	$_SESSION['visitcount']=1;
+}
+echo "<p>Hit Count is=</p>"$_SESSION['visitcount'];
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Boy Who Cried Wolf</title>
+</head>
+<body>
+
+<h1>THE BOY WHO CRIED WOLF </h1>
+<p>
+Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out, “Wolf! Wolf! The wolf is chasing the sheep!”
+
+When the villagers heard the cry, they came running up the hill to drive the wolf away. But, when they arrived, they saw no wolf. The boy was amused when seeing their angry faces
+
+“Don’t scream wolf, boy,” warned the villagers, “when there is no wolf!” They angrily went back down the hill.
+
+Later, the shepherd boy cried out once again, “Wolf! Wolf! The wolf is chasing the sheep!” To his amusement, he looked on as the villagers came running up the hill to scare the wolf away.
+
+As they saw there was no wolf, they…walked grumbling down the hill once more.
+
+Later, the boy saw a real wolf sneaking around his flock. Alarmed, he jumped on his feet and cried out as loud as he could, “Wolf! Wolf!” But the villagers thought he was fooling them again, and so they didn’t come to help.
+
+At sunset, the villagers went looking for the boy who hadn’t returned with their sheep. When they went up the hill, they found him weeping.
+
+“There really was a wolf here! The flock is gone! I cried out, ‘Wolf!’ but you didn’t come,” he wailed.
+
+An old man went to comfort the boy. As he put his arm around him, he said, “Nobody believes a liar, even when he is telling the truth!”
+
+
+</p>
+<a href="C:\xampp\htdocs\htdocs\signup_info\perstorycount.php"><label>No of people currently viewing the story </label></a><br>
+
+<a href = "C:\xampp\htdocs\htdocs\signup_info\visitor.php"><label>Toatal read count of story</label></a>
+
+ </body>
+
+</html>
+
+
+
+
+

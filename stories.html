@@ -1,0 +1,46 @@
+<?php
+
+<$uname=_POST['email'];
+<$passw=_POST['psw'];
+
+if(!empty($username)||!empty($password)){
+	$host = "localhost";
+	$dbUsername = "root";
+	$dbPassword = "";
+	$dbname =  "signup_info";
+	// create a connection
+	$conn = mysqli_connect($host,$dbUsername,$dbPassword,$dbname);
+	$sql = mysql_select_db('signup_info',$conn);
+	if(mysqli_connect_error()){
+		die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
+	}
+	else{
+
+		$SELECT = "SELECT email,password From sign_up where email='uname & password='passw'";
+		
+		$result=mysqli_query($conn,$SELECT);
+		if(!$result)
+		 {
+		 echo" USER EXIST";
+		 }
+		 else
+		 {
+		 exit();}
+		 ?>
+		 
+		 
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>The New Era Of Book Reading</title>
+</head>
+<body>
+<h1>Stories</h1>
+<ul>
+  <a href="C:\xampp\htdocs\htdocs\signup_info\the boy.html"><li>The story of a boy to CEO of billion dollar company</li></a>
+  <a href="C:\xampp\htdocs\htdocs\signup_info\the golden touch.html"><li>The Golden Touch </li></a>
+  <a href="C:\xampp\htdocs\htdocs\signup_info\the fox.html"><li>The Fox and the Grapes</li></a>
+  </ul>
+  </body>
+  </html>
